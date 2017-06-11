@@ -1,0 +1,10 @@
+{{#repo-filter
+   filter=(action 'filterRepo')
+   as |repos|}}
+  <ul class="results">
+    {{#each repos as |repo|}}
+      <li>{{repo-listing repo=repo}}</li>
+    {{/each}}
+  </ul>
+{{/repo-filter}}
+{{outlet}}
