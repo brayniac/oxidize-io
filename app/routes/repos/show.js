@@ -2,6 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.get('store').findRecord('repo', params.repo_id);
+
+    let result = this.get('store').query('repo', {
+      owner: params.owner,
+      name: params.name,
+    }).then(function(repos) {
+    let repo = repos.objectAt(0);
+    return repo;
+  });
+    return result;
   }
 });

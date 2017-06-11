@@ -28,27 +28,30 @@ export default function() {
 
   let repos = [{
       type: 'repos',
-      id: 'brayniac-green',
+      id: '1',
       attributes: {
-        name: 'brayniac/green',
+        owner: 'brayniac',
+        name: 'green',
         status: 'ok',
         rustfmt: 'ok',
         clippy: 'ok',
       }
     }, {
       type: 'repos',
-      id: 'brayniac-yellow',
+      id: '2',
       attributes: {
-        name: 'brayniac/yellow',
+        owner: 'brayniac',
+        name: 'yellow',
         status: 'pending',
         rustfmt: 'ok',
         clippy: 'pending',
       }
     }, {
       type: 'repos',
-      id: 'brayniac-red',
+      id: '3',
       attributes: {
-        name: 'brayniac/red',
+        owner: 'brayniac',
+        name: 'red',
         status: 'failed',
         rustfmt: 'ok',
         clippy: 'failed',
@@ -67,7 +70,7 @@ export default function() {
   });
 
   // Find and return the provided rental from our rental list above
-  this.get('/repos/:id', function (db, request) {
+  this.get('/repos/:name', function (db, request) {
     return { data: repos.find((repo) => request.params.name === repo.name) };
   });
 }

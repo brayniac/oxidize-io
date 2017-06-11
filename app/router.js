@@ -9,7 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('repos', function() {
-    this.route('show', { path: '/:repo_id' });
+    this.route('show', { path: '/:owner/:name' });
   });
 });
 
