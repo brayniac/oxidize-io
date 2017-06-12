@@ -73,4 +73,47 @@ export default function() {
   this.get('/repos/:name', function (db, request) {
     return { data: repos.find((repo) => request.params.name === repo.name) };
   });
+
+  let builds = [{
+      type: 'builds',
+      id: '1',
+      attributes: {
+        repo: '1',
+        label: 'push: initial commit',
+        status: 'ok',
+      }
+    }, {
+      type: 'builds',
+      id: '2',
+      attributes: {
+        repo: '1',
+        label: 'pr: update readme',
+        status: 'ok',
+      }
+    }, {
+      type: 'builds',
+      id: '3',
+      attributes: {
+        repo: '2',
+        label: 'push: initial commit',
+        status: 'failed',
+      }
+    }, {
+      type: 'builds',
+      id: '4',
+      attributes: {
+        repo: '2',
+        label: 'push: bugfix: fix broken test',
+        status: 'pending',
+      }
+    }];
+
+  this.get('/builds', function(db, request) {
+      return { data: builds };
+  });
+
+  // Find and return the provided rental from our rental list above
+  this.get('/builds/:id', function (db, request) {
+    return { data: builds.find((build) => request.params.id === build.id) };
+  });
 }
