@@ -124,7 +124,7 @@ p {
     padding: 11px;
     font-size: 18px;
     width: 500px;
-    margin: 50px auto;
+    margin: 10px auto;
     background-color: rgba(255, 255, 255, 0.75);
     border: solid 1px lightgray;
     display: block;
@@ -176,32 +176,32 @@ p {
  */
 
 .body {
-    padding: 15px;
+    padding: 25px;
 }
 /**
  * Similar to Jumbotron
  */
 
 .jumbo {
-    padding: 150px;
+    padding: 60px;
     background: #f6f6f6;
-    background:linear-gradient(to right,#0665CD 0,#0665CD 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#0665CD 0,#0665CD 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .ok {
-    background:linear-gradient(to right,#197F00 0,#197F00 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#197F00 0,#197F00 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .pending {
-    background:linear-gradient(to right,#EBA415 0,#EBA415 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .failed {
-    background:linear-gradient(to right,#A11E11 0,#A11E11 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .grey {
-    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .jumbo:hover {
@@ -230,7 +230,8 @@ p {
 .listing {
     margin-top: 15px;
     background-color: #f6f6f6;
-    padding: 15px 60px;
+    padding: 25px;
+    padding-left: 60px;
     min-height: 100px;
     position: relative;
 }
