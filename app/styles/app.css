@@ -4,7 +4,12 @@
  */
 
 /* These are my favorite colors:
- *  #197F00 BuildGreen
+ *  #197F00 Green
+ *  #EBA415 Yellow
+ *  #A11E11 Red
+ *  #0665CD Blue
+ *  #F9F9F9 White
+ *  #2B2B2B Dark
  */
 
 * {
@@ -29,11 +34,11 @@ a {
 }
 
 body {
-    background: #f3f3f3;
+    background: #F0F0F0;
 }
 
 a {
-    color: #2185D0;
+    color: #0665CD;
     text-decoration: none;
 }
 
@@ -74,12 +79,12 @@ p {
 
 .menu {
     height: 4em;
-    background-color: #272F32; /*COLOR 1*/
+    background-color: #2B2B2B; /*COLOR 1*/
 }
 
 .menu h1 {
     padding: 7px 0 0 20px;
-    color: #f9f9f9;
+    color: #F9F9F9;
     font-size: 2.1em;
 }
 
@@ -180,7 +185,7 @@ p {
 .jumbo {
     padding: 150px;
     background: #f6f6f6;
-    background:linear-gradient(to right,#079DAB 0,#079DAB 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#0665CD 0,#0665CD 100px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
 }
 
 .ok {
