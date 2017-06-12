@@ -6,4 +6,5 @@ export default DS.Model.extend({
   status: DS.attr(),
   rustfmt: DS.attr(),
   clippy: DS.attr(),
+  builds: DS.hasMany('build'),
 });
