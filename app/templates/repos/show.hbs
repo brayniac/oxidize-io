@@ -1,5 +1,5 @@
 <div class="jumbo show-listing {{model.status}}">
-  <h2 class="title">{{model.name}}</h2>
+  <h2 class="title">{{model.owner}}/{{model.name}} <a href="{{model.github}}">{{fa-icon "github"}}</a></h2>
   <div class="right detail-section">
     <div class="detail rustfmt">
         <strong>rustfmt:</strong> {{model.rustfmt}}
@@ -13,3 +13,4 @@
     <strong>status:</strong> {{model.status}}
   </div>
 </div>
+

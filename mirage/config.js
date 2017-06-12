@@ -31,6 +31,7 @@ export default function() {
       id: '1',
       attributes: {
         owner: 'brayniac',
+        github: 'https://github.com/brayniac',
         name: 'green',
         status: 'ok',
         rustfmt: 'ok',
@@ -41,6 +42,7 @@ export default function() {
       id: '2',
       attributes: {
         owner: 'brayniac',
+        github: 'https://github.com/brayniac',
         name: 'yellow',
         status: 'pending',
         rustfmt: 'ok',
@@ -51,6 +53,7 @@ export default function() {
       id: '3',
       attributes: {
         owner: 'brayniac',
+        github: 'https://github.com/brayniac',
         name: 'red',
         status: 'failed',
         rustfmt: 'ok',
