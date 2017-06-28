@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400&amp;subset=latin-ext);
 /**
  * Base Elements
  */
@@ -9,6 +9,7 @@
  *  #A11E11 Red
  *  #0665CD Blue
  *  #F9F9F9 White
+ *  #F6F6F6 Light
  *  #2B2B2B Dark
  */
 
@@ -31,10 +32,11 @@ span,
 a {
     font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
     line-height: 1.5;
+    font-weight: 400;
 }
 
 body {
-    background: #F0F0F0;
+    background: #F6F6F6;
 }
 
 a {
@@ -70,7 +72,7 @@ p {
 
 .container {
     min-height: 100vh;
-    background: #f9f9f9;
+    background: #F9F9F9;
     margin: 0 auto;
 }
 /**
@@ -79,7 +81,7 @@ p {
 
 .menu {
     height: 4em;
-    background-color: #2B2B2B; /*COLOR 1*/
+    background-color: #2B2B2B;
 }
 
 .menu h1 {
@@ -102,7 +104,7 @@ p {
     text-decoration: none;
     line-height: 1;
     padding: 0 15px;
-    color: #f9f9f9;
+    color: #F9F9F9;
     opacity: 0.85;
 }
 
@@ -131,7 +133,7 @@ p {
 }
 
 .menu input:focus {
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
     outline: none;
 }
 
@@ -158,7 +160,7 @@ p {
     width: 215px;
     top: 54px;
     left: 10px;
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
@@ -169,7 +171,7 @@ p {
 }
 
 .menu .results li:hover {
-    background: #f3f3f3;
+    background: #F6F6F6;
 }
 /**
  * Content Area
@@ -184,28 +186,24 @@ p {
 
 .jumbo {
     padding: 60px;
-    background: #f6f6f6;
-    background:linear-gradient(to right,#0665CD 0,#0665CD 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background: #F6F6F6;
+    background:linear-gradient(to right,#0665CD 0,#0665CD 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .ok {
-    background:linear-gradient(to right,#197F00 0,#197F00 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#197F00 0,#197F00 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .pending {
-    background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .failed {
-    background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .grey {
-    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
-}
-
-.jumbo:hover {
-    background-color: #f3f3f3;
+    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .jumbo h2 {
@@ -229,7 +227,7 @@ p {
 
 .listing {
     margin-top: 15px;
-    background-color: #f6f6f6;
+    background-color: #F6F6F6;
     padding: 25px;
     padding-left: 60px;
     min-height: 100px;
@@ -237,23 +235,19 @@ p {
 }
 
 .listing-ok {
-    background:linear-gradient(to right,#197F00 0,#197F00 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#197F00 0,#197F00 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .listing-pending {
-    background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .listing-failed {
-    background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
+    background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .listing-grey {
-    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#f6f6f6 10px,#f6f6f6 80%) no-repeat
-}
-
-.listing:hover {
-    background-color: #f3f3f3;
+    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#F6F6F6 10px,#F6F6F6 80%) no-repeat
 }
 
 .listing img {
@@ -316,7 +310,7 @@ p {
     padding: 10px 15px 0 0;
     margin: 0;
     font-weight: 300;
-    font-style: italic;
+    /*font-style: italic;*/
 }
 
 .listing .detail span {
