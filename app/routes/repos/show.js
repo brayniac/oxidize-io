@@ -6,9 +6,9 @@ export default Ember.Route.extend({
       owner: params.owner,
       name: params.name,
     }).then(function(repos) {
-    let repo = repos.objectAt(0);
-    return repo;
-  });
+      let repo = repos.objectAt(0);
+      return repo;
+    });
     return result;
   }
 });

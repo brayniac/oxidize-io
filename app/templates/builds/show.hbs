@@ -1,6 +1,75 @@
-<div class="jumbo show-listing {{model.status}}">
-  <h2 class="title">#{{model.id}} {{model.label}}</h2>
-  <div class="detail status">
-    <strong>status:</strong> {{model.status}}
-  </div>
+<div class="listing show-listing {{model.overall}}">
+  <h2 class="title">#{{model.id}} [{{model.repo}}]</h2>
+  <h3 class="sub-title">{{model.label}}</h3>
+  <b>overall:</b> {{model.overall}}
+</div>
+
+<div class="chicklet">
+  <h3 class="sub-title">tests</h3>
+  <table width="100%">
+    <tr>
+      <td class="chicklet chicklet-{{model.style}}"><b>style:</b> {{model.style}}</td>
+      <td class="chicklet chicklet-{{model.lint}}"><b>lint:</b> {{model.lint}}</td>
+      <td class="chicklet chicklet-{{model.fuzz}}"><b>fuzz:</b> {{model.fuzz}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.stable}}"><b>stable:</b> {{model.stable}}</td>
+      <td class="chicklet chicklet-{{model.beta}}"><b>beta:</b> {{model.beta}}</td>
+      <td class="chicklet chicklet-{{model.nightly}}"><b>nightly:</b> {{model.nightly}}</td>  
+    </tr>
+  </table>
+</div>
+
+<div class="matrix">
+  <h3 class="sub-title">build matrix</h3>
+  <table width="100%">
+    <tr>
+      <td class="chicklet chicklet-{{model.aarch64_unknown_linux_gnu}}"><b>aarch64-unknown-linux-gnu:</b> {{model.aarch64_unknown_linux_gnu}}</td>
+      <td class="chicklet chicklet-{{model.aarch64_unknown_linux_gnu_stable}}"><b>stable:</b> {{model.aarch64_unknown_linux_gnu_stable}}</td>
+      <td class="chicklet chicklet-{{model.aarch64_unknown_linux_gnu_beta}}"><b>beta:</b> {{model.aarch64_unknown_linux_gnu_beta}}</td>
+      <td class="chicklet chicklet-{{model.aarch64_unknown_linux_gnu_nightly}}"><b>nightly:</b> {{model.aarch64_unknown_linux_gnu_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabi}}"><b>arm-unknown-linux-gnueabi:</b> {{model.arm_unknown_linux_gnueabi}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabi_stable}}"><b>stable:</b> {{model.arm_unknown_linux_gnueabi_stable}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabi_beta}}"><b>beta:</b> {{model.arm_unknown_linux_gnueabi_beta}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabi_nightly}}"><b>nightly:</b> {{model.arm_unknown_linux_gnueabi_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabihf}}"><b>arm-unknown-linux-gnueabihf:</b> {{model.arm_unknown_linux_gnueabihf}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabihf_stable}}"><b>stable:</b> {{model.arm_unknown_linux_gnueabihf_stable}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabihf_beta}}"><b>beta:</b> {{model.arm_unknown_linux_gnueabihf_beta}}</td>
+      <td class="chicklet chicklet-{{model.arm_unknown_linux_gnueabihf_nightly}}"><b>nightly:</b> {{model.arm_unknown_linux_gnueabihf_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.armv7_unknown_linux_gnueabihf}}"><b>armv7-unknown-linux-gnueabihf:</b> {{model.armv7_unknown_linux_gnueabihf}}</td>
+      <td class="chicklet chicklet-{{model.armv7_unknown_linux_gnueabihf_stable}}"><b>stable:</b> {{model.armv7_unknown_linux_gnueabihf_stable}}</td>
+      <td class="chicklet chicklet-{{model.armv7_unknown_linux_gnueabihf_beta}}"><b>beta:</b> {{model.armv7_unknown_linux_gnueabihf_beta}}</td>
+      <td class="chicklet chicklet-{{model.armv7_unknown_linux_gnueabihf_nightly}}"><b>nightly:</b> {{model.armv7_unknown_linux_gnueabihf_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_gnu}}"><b>i686-unknown-linux-gnu:</b> {{model.i686_unknown_linux_gnu}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_gnu_stable}}"><b>stable:</b> {{model.i686_unknown_linux_gnu_stable}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_gnu_beta}}"><b>beta:</b> {{model.i686_unknown_linux_gnu_beta}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_gnu_nightly}}"><b>nightly:</b> {{model.i686_unknown_linux_gnu_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_musl}}"><b>i686-unknown-linux-musl:</b> {{model.i686_unknown_linux_musl}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_musl_stable}}"><b>stable:</b> {{model.i686_unknown_linux_musl_stable}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_musl_beta}}"><b>beta:</b> {{model.i686_unknown_linux_musl_beta}}</td>
+      <td class="chicklet chicklet-{{model.i686_unknown_linux_musl_nightly}}"><b>nightly:</b> {{model.i686_unknown_linux_musl_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_gnu}}"><b>x86_64-unknown-linux-gnu:</b> {{model.x8664_unknown_linux_gnu}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_gnu_stable}}"><b>stable:</b> {{model.x8664_unknown_linux_gnu_stable}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_gnu_beta}}"><b>beta:</b> {{model.x8664_unknown_linux_gnu_beta}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_gnu_nightly}}"><b>nightly:</b> {{model.x8664_unknown_linux_gnu_nightly}}</td>
+    </tr>
+    <tr>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_musl}}"><b>x86_64-unknown-linux-musl:</b> {{model.x8664_unknown_linux_musl}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_musl_stable}}"><b>stable:</b> {{model.x8664_unknown_linux_musl_stable}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_musl_beta}}"><b>beta:</b> {{model.x8664_unknown_linux_musl_beta}}</td>
+      <td class="chicklet chicklet-{{model.x8664_unknown_linux_musl_nightly}}"><b>nightly:</b> {{model.x8664_unknown_linux_musl_nightly}}</td>
+    </tr>
+  </table>
 </div>

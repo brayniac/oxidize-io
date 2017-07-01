@@ -1,6 +1,6 @@
-<article class="listing listing-{{repo.status}}">
+<article class="listing listing-{{repo.overall}}">
   <h3>{{#link-to "repos.show" repo}}{{repo.owner}}/{{repo.name}}{{/link-to}}</h3>
   <div class="detail status">
-    <span>status:</span> {{repo.status}}
+    <span>master:</span> {{repo.overall}}
   </div>
 </article>
