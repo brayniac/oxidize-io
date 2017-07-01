@@ -48,6 +48,12 @@ p {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+th, td {
+    padding: 0px;
+    text-align: left;
+}
+
 /**
  * Button
  */
@@ -66,6 +72,7 @@ p {
 .button:hover {
     opacity: 1;
 }
+
 /**
  * Body Container
  */
@@ -75,6 +82,7 @@ p {
     background: #F9F9F9;
     margin: 0 auto;
 }
+
 /**
  * Top Navigation
  */
@@ -173,6 +181,7 @@ p {
 .menu .results li:hover {
     background: #F5F5F5;
 }
+
 /**
  * Content Area
  */
@@ -180,6 +189,7 @@ p {
 .body {
     padding: 25px;
 }
+
 /**
  * Similar to Jumbotron
  */
@@ -190,19 +200,19 @@ p {
     background:linear-gradient(to right,#0665CD 0,#0665CD 40px,#F5F5F5 10px,#F5F5F5 80%) no-repeat
 }
 
-.ok {
+.jumbo-ok {
     background:linear-gradient(to right,#197F00 0,#197F00 40px,#F5F5F5 10px,#F5F5F5 80%) no-repeat
 }
 
-.pending {
+.jumbo-pending {
     background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#F5F5F5 10px,#F5F5F5 80%) no-repeat
 }
 
-.failed {
+.jumbo-failed {
     background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#F5F5F5 10px,#F5F5F5 80%) no-repeat
 }
 
-.grey {
+.jumbo-grey {
     background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#F5F5F5 10px,#F5F5F5 80%) no-repeat
 }
 
@@ -225,7 +235,7 @@ p {
  * Individual Listings
  */
 
-.listing {
+.entry {
     margin-top: 15px;
     background-color: #F5F5F5;
     padding: 25px;
@@ -234,77 +244,31 @@ p {
     position: relative;
 }
 
-.listing-ok {
+.entry-ok {
     background:linear-gradient(to right,#197F00 0,#197F00 40px,#F5F5F5 0,#F5F5F5 80%) no-repeat
 }
 
-.listing-pending {
+.entry-pending {
     background:linear-gradient(to right,#EBA415 0,#EBA415 40px,#F5F5F5 0,#F5F5F5 80%) no-repeat
 }
 
-.listing-failed {
+.entry-failed {
     background:linear-gradient(to right,#A11E11 0,#A11E11 40px,#F5F5F5 0,#F5F5F5 80%) no-repeat
 }
 
-.listing-grey {
+.entry-grey {
     background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 40px,#F5F5F5 0,#F5F5F5 80%) no-repeat
 }
 
-.listing img {
-    height: 100px;
-    float: left;
-    margin-right: 45px;
-    border-radius: 5px;
-}
-
-.listing a.image.wide {
-    max-width: 100%;
-    position: relative;
-    z-index: 999;
-}
-
-.listing .wide img {
-    height: initial;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.listing .wide small {
-    display: none;
-}
-
-.listing a.image {
-    max-width: 150px;
-    display: block;
-    cursor: pointer;
-}
-
-.listing small {
-    float: left;
-    display: block;
-    text-align: center;
-    width: 136px;
-}
-
-.listing h3 {
+.entry h3 {
     padding: 0 15px 0 0;
 }
 
-.listing h3 a {
+.entry h3 a {
     display: inline;
 }
 
-.listing .map {
-    position: absolute;
-    bottom: 13px;
-    right: 50px;
-    height: 120px;
-    width: 120px;
-    background-size: cover;
-    border-radius: 5px;
-}
-
-.listing .detail {
+.entry .detail {
     width: 36%;
     display: inline-block;
     padding: 10px 15px 0 0;
@@ -313,28 +277,71 @@ p {
     /*font-style: italic;*/
 }
 
-.listing .detail span {
+.entry .detail span {
     font-weight: 400;
     font-style: normal;
 }
 
-.show-listing .title {
+.show-entry .title {
     margin-bottom: 15px;
 }
 
-.show-listing .detail-section {
+.show-entry .detail-section {
     width: 50%;
     padding-left: 30px;
 }
 
-.show-listing .owner {
+.show-entry .owner {
     margin-top: 10px;
 }
 
-.show-listing .rental-pic {
-    width: 50%;
-    height: initial;
-    position: static;
+
+.status {
+    margin-top: 0px;
+    background-color: #F5F5F5;
+    padding: 0px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.status-ok {
+    background:linear-gradient(to right,#197F00 0,#197F00 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.status-pending {
+    background:linear-gradient(to right,#EBA415 0,#EBA415 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.status-failed {
+    background:linear-gradient(to right,#A11E11 0,#A11E11 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.status-grey {
+    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.matrix {
+    margin-top: 0px;
+    background-color: #F5F5F5;
+    padding: 0px;
+    padding-left: 40px;
+    position: relative;
+}
+
+.matrix-ok {
+    background:linear-gradient(to right,#197F00 0,#197F00 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.matrix-pending {
+    background:linear-gradient(to right,#EBA415 0,#EBA415 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.matrix-failed {
+    background:linear-gradient(to right,#A11E11 0,#A11E11 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
+}
+
+.matrix-grey {
+    background:linear-gradient(to right,#8A8A8A 0,#8A8A8A 25px,#F5F5F5 0,#F5F5F5 80%) no-repeat
 }
 
 th, td {
